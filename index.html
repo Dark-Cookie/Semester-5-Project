@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        html {
+  scroll-behavior: smooth;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travelix</title>
+    <!--Font awesome CDN-->
+    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <img src="./images/logo.png" alt="">
+            </a>
+            <div class="hamburger-menu">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">News</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="hero">
+        <div class="container">
+            <div class="main-heading">
+                <h1 class="title">Discover</h1>
+                <h2 class="subtitle">Luxury Hotels</h2>
+            </div>
+            <a href="#section1" class="btn btn-gradient">Explore Now
+                <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+            </a>
+        </div>
+    </div>
+    <section class="booking">
+        <div class="container">
+            <form action="#section2" class="book-form">
+                <div class="input-group">
+                    <label for="destination" class="input-label">Destination</label>
+                    <input type="text" class="input" id="destination">
+                </div>
+
+                <div class="input-group">
+                    <label for="check-in" class="input-label">Check In</label>
+                    <input type="date" class="input" id="check-in">
+                </div>
+
+                <div class="input-group">
+                    <label for="check-out" class="input-label">Check Out</label>
+                    <input type="date" class="input" id="check-out">
+                </div>
+
+                <div class="input-group">
+                    <label for="adults" class="input-label">Adults</label>
+                    <select id="adults" class="options">
+                        <option value="0">0</option>
+                        <option value="0">1</option>
+                        <option value="0">2</option>
+                        <option value="0">3</option>
+                        <option value="0">4</option>
+                        <option value="0">5</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="children" class="input-label">Children</label>
+                    <select id="children" class="options">
+                        <option value="0">0</option>
+                        <option value="0">1</option>
+                        <option value="0">2</option>
+                        <option value="0">3</option>
+                        <option value="0">4</option>
+                        <option value="0">5</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn form-btn btn-purple"> Search
+                    <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                </button>
+
+            </form>
+        </div>
+    </section>
+       
+    <section class="hotels" id="section1">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Explore</span>
+                <span class="sub-heading">Our Beautiful Hotels</span>
+            </h5>
+            <div class="grid">
+                <div class="grid-item featured-hotels">
+                    <img src="./images/hotel_astro_resort.jpg" alt="" class="hotel-image">
+                    <h5 class="hotel-name">Astro Hotel</h5>
+                    <span class="hotel-price">From $200/Night</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <a href="#section2" class="btn btn-gradient">Book Now
+                        <span class="dots"><i class="fas fa-ellipis-h"></i></span>
+                    </a>
+                </div>
+
+                <div class="grid-item featured-hotels">
+                    <img src="./images/hotel_the_enchanted_garden.jpg" alt="" class="hotel-image">
+                    <h5 class="hotel-name">Enchanted Garden</h5>
+                    <span class="hotel-price">From $300/Night</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                    </div>
+                    <a href="#section3" class="btn btn-gradient">Book Now
+                        <span class="dots"><i class="fas fa-ellipis-h"></i></span>
+                    </a>
+                </div>
+
+                <div class="grid-item featured-hotels">
+                    <img src="./images/hotel_the_paradise.jpg" alt="" class="hotel-image">
+                    <h5 class="hotel-name">The Paradise</h5>
+                    <span class="hotel-price">From $350/Night</span>
+                    <div class="hotel-rating">
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star rating"></i>
+                        <i class="fas fa-star-half rating"></i>
+                    </div>
+                    <a href="#section4" class="btn btn-gradient">Book Now
+                        <span class="dots"><i class="fas fa-ellipis-h"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="offer">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="container">
+                    <div class="offer-content">
+                        <div class="discount">
+                            38% off
+                        </div>
+                        <h5 class="hotel-name">Astro Hotel</h5>
+                            <div class="hotel-rating">
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star-half rating"></i>
+                            </div>
+                            <p class="paragraph">
+                            Astro Hotel offers ultimate comfort and luxury. This 4-storied hotel is a beautiful combination of traditional grandeur and modern facilities. The 255 exclusive guest rooms are furnished with a range of modern amenities such as television and internet access. International direct-dial phone and safe are also available in any of these rooms. Wake-up call facility is also available in these rooms.
+                            </p>
+                            <a href="#section2" class="btn btn-gradient">Redeem Offer
+                                <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="container">
+                    <div class="offer-content">
+                        <div class="discount">
+                            40% off
+                        </div>
+                        <h5 class="hotel-name">The Paradise</h5>
+                            <div class="hotel-rating">
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star-half rating"></i>
+                            </div>
+                            <p class="paragraph">
+                            The Paradise offers 80 elegant and plush rooms decorated and furnished in a classical style with warm colors, quality furnishings and rich fabrics. Situated close to Cornelia Metro Station overlooking the Vatican and a pine forest, the Pinewood Hotel Rome also offers free parking, a gorgeous outdoor sun terrace, a hotel lounge room serving an extensive complimentary breakfast to all of our guests.
+                            </p>
+                            <a href="#section4" class="btn btn-gradient">Redeem Offer
+                                <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                            </a>
+                    </div>
+                </div>
+            </div> 
+            <div class="mySlides fade">
+                <div class="container">
+                    <div class="offer-content">
+                        <div class="discount">
+                            45% off
+                        </div>
+                        <h5 class="hotel-name">Enchanted Garden</h5>
+                            <div class="hotel-rating">
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star rating"></i>
+                                <i class="fas fa-star-half rating"></i>
+                            </div>
+                            <p class="paragraph">
+                            Enchanted Garden is a quiet, comfortable hotel located near the Ecological Sanctuary and the Monteverde Butterfly Gardens in an area called Cerro Plano, an ideal location half way between the Monteverde Cloud Forest reserve and the main village of the Monteverde area (Santa Elena), in close proximity to several restaurants and activities. All rooms have private bathrooms with hot water. 
+                            </p>
+                            <a href="#section3" class="btn btn-gradient">Redeem Offer
+                                <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                            </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <section class="rooms" id="section2">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Luxurious</span>
+                <span class="sub-heading">Affordable rooms</span>
+            </h5>
+            <div class="grid rooms-grid">
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./images/room_1.jpg" alt="">
+                        <h5 class="room-name">Astro Hotel</h5>                    
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">$200 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph">
+                            The view from this hotel room window alone is worth the trip, With a beach and then there are all the little extras that make a stay at Astro Hotel so special. It has a futuristic look to it which make the stay worth your while.
+                        </p>
+                        <a href="./Registration Form/From.html" class="btn rooms-btn">Book now &rarr;</a>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./images/room_2.jpg" alt="">
+                        <h5 class="room-name">Astro Hotel</h5>                    
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">$200 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph">
+                            You’ll notice it the instant you walk in – the attention to detail and the effort we made to meet your needs and requirements. Starting from the comfortable king-size bed to the spacious walk-in closet
+                        </p>
+                        <a href="./Registration Form/From2.html" class="btn rooms-btn">Book now &rarr;</a>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./images/room_3.jpg" alt="">
+                        <h5 class="room-name">Astro Hotel</h5>                    
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">$200 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph" id="section3">
+                            This large-sized, rectangular bedroom has matched furniture. The floor is oak wood and the walls are painted with a paneled dado. The room is done in warm colors and overall looks like an castle.
+                        </p>
+                        <a href="./Registration Form/From3.html" class="btn rooms-btn">Book now &rarr;</a>
+                    </div>
+                    
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./images/room_4.jpg" alt="">
+                        <h5 class="room-name">Enchanted Garden</h5>                    
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">$300 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph">
+                            This spacious bedroom has matching metal and plastic furniture. The floor is poured and the walls are painted and decorated with a wallpaper border.  Light is provided by table lamps.
+                        </p>
+                        <a href="./Registration Form/From4.html" class="btn rooms-btn">Book now &rarr;</a>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./images/room_5.jpg" alt="">
+                        <h5 class="room-name">Enchanted Garden</h5>                    
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">$300 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph">
+                            Elegant, inviting and with a wonderful view over the beautiful park with matched wooden furniture. it also has a futuristic look to it. Hence named enchanted garden.
+                        </p>
+                        <a href="./Registration Form/From5.html" class="btn rooms-btn">Book now &rarr;</a>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./images/room_6.jpg" alt="">
+                        <h5 class="room-name">Enchanted Garden</h5>                    
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">$300 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph" id="section4">
+                            Our king size four poster provides views over landscaped gardens. It has a seating area, ample storage, digital safe, minibar and luxurious duck down bedding.
+                        </p>
+                        <a href="./Registration Form/From6.html" class="btn rooms-btn">Book now &rarr;</a>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./images/room_7.jpg" alt="">
+                        <h5 class="room-name">The Paradise</h5>                    
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">$350 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph">
+                            This spacious, square dining room has coordinating wooden furniture.  The seating is cushioned.  The floor is carpeted and the walls are painted with a wallpapered dado.
+                        </p>
+                        <a href="./Registration Form/From7.html" class="btn rooms-btn">Book now &rarr;</a>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./images/room_8.jpg" alt="">
+                        <h5 class="room-name">The Paradise</h5>                    
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">$350 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph">
+                            This large room has coordinating wooden furniture. The room is done in colors that remind you of an ice cream sundae and overall looks very clean.
+                        </p>
+                        <a href="./Registration Form/From8.html" class="btn rooms-btn">Book now &rarr;</a>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./images/room_9.jpg" alt="">
+                        <h5 class="room-name">The Paradise</h5>                    
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">$350 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph">
+                            This moderately-sized house has a fairytale-like look to it. It also has coordinating wooden furniture.  The seating is cushioned and the floor is marble.
+                        </p>
+                        <a href="./Registration Form/From9.html" class="btn rooms-btn">Book now &rarr;</a>
+                    </div>
+                </div>
+                <div class="grid-item featured-rooms">
+                    <div class="image-wrap">
+                        <img class="room-image" src="./images/room_10.jpg" alt="">
+                        <h5 class="room-name">The Paradise</h5>            
+                    </div>
+                    <div class="room-info-wrap">
+                        <span class="room-price">$400 <span class="per-night">Per Night</span></span>
+                        <p class="paragraph">
+                        This room is elegantly furnished with handmade furniture include luxury en-suite facilities with complimentary amenities pack, flat screen LCD TV, tea/coffee making facilities, fan, hairdryer and the finest pure white linen and towels.
+                        </p>
+                        <a href="./Registration Form/From10.html" class="btn rooms-btn">Book now &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h5 class="section-head">
+                <span class="heading">Contact</span>
+                <span class="sub-heading">Get in touch with us</span>
+            </h5>
+            <div class="contact-content">
+                <div class="traveler-wrap">
+                    <img src="./images/traveler.png" alt="">
+                </div>
+                <form action="" class="form contact-form">
+                    <div class="input-group-wrap">
+                        <div class="input-group">
+                            <input type="text"  class="input" placeholder="Name" required>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="input-group">
+                            <input type="email"  class="input" placeholder="E-mail" required>
+                            <span class="bar"></span>
+                        </div>
+                    </div>    
+                        <div class="input-group">
+                            <input type="text"  class="input" placeholder="Subject" required>
+                            <span class="bar"></span>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="input" cols="30" rows="8"placeholder="Message" required></textarea>
+                            <span class="bar"></span>
+                        </div>
+                        <button type="submit" class="btn form-btn btn-purple">Send Message
+                            <span class="dots"><i class="fas fa-ellipsis-h"></i></span>
+                        </button>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-content-brand">
+                <a href="index.html" class="logo">
+                    <img class="logo-image" src="./images/logo.png" alt="">
+                </a>
+                <div class="paragraph">
+                    Thank you for using Travelix, We hope you liked it...
+                </div>
+            </div>
+            <div class="social-media-wrap">
+                <h4 class="footer-heading">Follow us</h4>
+                <div class="social-media">
+                    <a href="https://twitter.com/explore" class="sm-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/" class="sm-link"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://about.instagram.com/features/search-and-explore" class="sm-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://in.pinterest.com/" class="sm-link"><i class="fab fa-pinterest"></i></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="sm-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+</div></footer>
+    <script src="main.js"></script>
+</body>
+</html>
